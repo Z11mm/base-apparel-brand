@@ -27,8 +27,11 @@ body {
     margin: 3rem;
 }
 
-.hero-image {
-    width: 100%;
+.text-content-container .hero-mobile {
+    background-image: url(./images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
 }
 
 /* Text info area */
@@ -141,4 +144,11 @@ button:hover {
 /* Footer */
 footer p {
     margin-top: 7rem;
+}
+
+@media screen and (min-width: 1000px) {
+    .all-content {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+    }
 }

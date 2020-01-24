@@ -19,47 +19,48 @@
 <body>
 
   <div class="all-content">
-    <header>
-      <div class="header-container">
-        <div class="brand-logo">
-          <img class="header-logo" src="images/logo.svg" alt="brand-logo">
-        </div>
-        <div class="hero">
-          <img class="hero-image" src="images/hero-mobile.jpg" alt="">
-        </div>
-      </div>
-    </header>
-    
-    <main>
-      <article>
-        <div class="text-content-container">
-          <header>
-            <div class="heading">
-              <h1>
-                <span class="text-bit">We're </span><span class="text-bit">coming </span><span class="text-bit">soon</span> 
-              </h1>
-            </div>
-          </header>
-          
-          <section>
-            <div class="call-to-action">
-              <p>Hello fellow shoppers! We're currently building our new fashion store. 
-                Add your email below to stay up-to-date with announcements and our launch deals.
-              </p>
-            </div>
-          </section>
-          
-          <div class="input-container">
-            <input id="email-field" type="email" name="email" placeholder="Email Address" title="Email is required" required>
-            <div id="error-img" class="error">
-              <img src="images/icon-error.svg" alt="Error Icon">
-            </div>
-            <button type="submit" id="submit-btn"><img src="images/icon-arrow.svg" alt="Submit Arrow Icon"></button>
+    <div class="desktop-left-half">
+      <header>
+        <div class="header-container">
+          <div class="brand-logo">
+            <img class="header-logo" src="images/logo.svg" alt="brand-logo">
           </div>
-          <div id="error-message" class="error-messages hide">
-            <span class="input-message" data-rule="valueMissing" >Please provide a valid email</span>
-            <!-- <span data-rule="typeMismatch">Special characters are not allowed</span> -->
-          </div>
+        </div>
+      </header>
+      
+      <main>
+        <article>
+          <div class="text-content-container">
+            <header>
+              <div class="hero-mobile"></div>
+              <div class="heading">
+                <h1>
+                  <span class="text-bit">We're </span><span class="text-bit">coming </span><span class="text-bit">soon</span> 
+                </h1>
+              </div>
+            </header>
+            
+            <section>
+              <div class="call-to-action">
+                <p>Hello fellow shoppers! We're currently building our new fashion store. 
+                  Add your email below to stay up-to-date with announcements and our launch deals.
+                </p>
+              </div>
+            </section>
+            
+            <div class="input-container">
+              <input id="email-field" type="email" name="email" placeholder="Email Address" title="Email is required" required>
+              <div id="error-img" class="error">
+                <img src="images/icon-error.svg" alt="Error Icon">
+              </div>
+              <button type="submit" id="submit-btn"><img src="images/icon-arrow.svg" alt="Submit Arrow Icon"></button>
+            </div>
+            <div id="error-message" class="error-messages hide">
+              <span class="input-message" data-rule="valueMissing" >Please provide a valid email</span>
+              <!-- <span data-rule="typeMismatch">Special characters are not allowed</span> -->
+            </div>
+    </div class="">
+          <div class="desktop-right-half"></div>
         </div>
       </article>
     </main>

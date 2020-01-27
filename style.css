@@ -27,7 +27,7 @@ body {
     margin: 3rem;
 }
 
-.text-content-container .hero-mobile {
+.hero-mobile {
     background-image: url(./images/hero-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -146,16 +146,21 @@ footer p {
     margin-top: 7rem;
 }
 
-@media screen and (min-width: 1000px) {
-    .all-content {
-        display: grid;
-        grid-template-columns: 48%, 52%;
+@media screen and (min-width: 700px) {
+    /* .all-content {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    } */
+
+    .hero-mobile {
+        background-image: none;
+        height: 0px;
     }
 
     .text-content-container {
         background-image: url(./images/bg-pattern-desktop.svg);
         background-repeat: no-repeat;
-        background-position: left;
+        background-position: left center;
         background-size: cover;
     }
 
@@ -164,5 +169,6 @@ footer p {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        min-height: 100vh;
     }
 }

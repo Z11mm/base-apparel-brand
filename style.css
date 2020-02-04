@@ -147,10 +147,10 @@ footer p {
 }
 
 @media screen and (min-width: 700px) {
-    /* .all-content {
-    display: grid;
-    grid-template-columns: 1fr, 1fr;
-    } */
+    .all-content {
+        display: flex;
+        flex-direction: row;
+    }
 
     .hero-mobile {
         background-image: none;
@@ -167,8 +167,13 @@ footer p {
     .desktop-right-half {
         background: url(./images/hero-desktop.jpg);
         background-repeat: no-repeat;
-        background-position: center;
         background-size: cover;
         min-height: 100vh;
+        background-position: top left;
+        flex-basis: 80%;
     }
+
+    /* .attribution {
+        display: none;
+    } */
 }

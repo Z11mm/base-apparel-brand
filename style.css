@@ -153,7 +153,7 @@ footer p {
     .all-content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        background: url(./images/bg-pattern-desktop.svg);
+        background: url(./images/bg-pattern-desktop.svg) left center/cover no-repeat;
         height: 100vh;
     }
 

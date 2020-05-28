@@ -147,6 +147,26 @@ footer p {
 }
 
 @media screen and (min-width: 700px) {
+    .hero-mobile {
+        display: none;
+    }
+    .all-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background: url(./images/bg-pattern-desktop.svg);
+        height: 100vh;
+    }
+
+    .desktop-right-half {
+        background: url(./images/hero-desktop.jpg) top left/cover no-repeat;
+    }
+
+    .attribution {
+        display: none;
+    }
+}
+
+/* @media screen and (min-width: 700px) {
     .all-content {
         display: flex;
         flex-direction: row;
@@ -168,12 +188,12 @@ footer p {
         background: url(./images/hero-desktop.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 100vh;
+        min-height: 100%;
         background-position: top left;
         flex-basis: 80%;
     }
 
-    /* .attribution {
+    .attribution {
         display: none;
-    } */
-}
+    }
+} */

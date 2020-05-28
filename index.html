@@ -1,80 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <div class="all-content">
-    <div class="desktop-left-half">
-      <header>
-        <div class="header-container">
-          <div class="brand-logo">
-            <img class="header-logo" src="images/logo.svg" alt="brand-logo">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="all-content">
+      <div class="desktop-left-half">
+        <header>
+          <div class="header-container">
+            <div class="brand-logo">
+              <img class="header-logo" src="images/logo.svg" alt="brand-logo" />
+            </div>
+          </div>
+        </header>
+
+        <div class="text-content-container">
+          <header>
+            <div class="hero-mobile"></div>
+            <div class="heading">
+              <h1>
+                <span class="text-bit">We're </span
+                ><span class="text-bit">coming </span
+                ><span class="text-bit">soon</span>
+              </h1>
+            </div>
+          </header>
+
+          <section>
+            <div class="call-to-action">
+              <p>
+                Hello fellow shoppers! We're currently building our new fashion
+                store. Add your email below to stay up-to-date with
+                announcements and our launch deals.
+              </p>
+            </div>
+          </section>
+
+          <div class="input-container">
+            <input
+              id="email-field"
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              title="Email is required"
+              required
+            />
+            <div id="error-img" class="error">
+              <img src="images/icon-error.svg" alt="Error Icon" />
+            </div>
+            <button type="submit" id="submit-btn">
+              <img src="images/icon-arrow.svg" alt="Submit Arrow Icon" />
+            </button>
+          </div>
+          <div id="error-message" class="error-messages hide">
+            <span class="input-message" data-rule="valueMissing"
+              >Please provide a valid email</span
+            >
           </div>
         </div>
-      </header>
-      
-      <main>
-      <article>
-          <div class="all-content">
-            <div class="text-content-container">
-              <header>
-                <div class="hero-mobile"></div>
-                <div class="heading">
-                  <h1>
-                    <span class="text-bit">We're </span><span class="text-bit">coming </span><span class="text-bit">soon</span> 
-                  </h1>
-                </div>
-              </header>
-              
-              <section>
-                <div class="call-to-action">
-                  <p>Hello fellow shoppers! We're currently building our new fashion store. 
-                    Add your email below to stay up-to-date with announcements and our launch deals.
-                  </p>
-                </div>
-              </section>
-              
-              <div class="input-container">
-                <input id="email-field" type="email" name="email" placeholder="Email Address" title="Email is required" required>
-                <div id="error-img" class="error">
-                  <img src="images/icon-error.svg" alt="Error Icon">
-                </div>
-                <button type="submit" id="submit-btn"><img src="images/icon-arrow.svg" alt="Submit Arrow Icon"></button>
-              </div>
-              <div id="error-message" class="error-messages hide">
-                <span class="input-message" data-rule="valueMissing" >Please provide a valid email</span>
-                <!-- <span data-rule="typeMismatch">Special characters are not allowed</span> -->
-              </div>
-            </div>
-            <div class="desktop-right-half"></div>
-          </div>
-      </article>
-    </main>
-  </div>
-  
-  
-  <!-- <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Zimuzo</a>.
-    </p>
-  </footer> -->
+      </div>
+      <div class="desktop-right-half"></div>
+    </div>
 
-  <script src="validate.js"></script>
-</body>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Zimuzo</a>.
+      </p>
+    </footer>
+
+    <script src="validate.js"></script>
+  </body>
 </html>
